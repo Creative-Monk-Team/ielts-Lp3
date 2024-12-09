@@ -86,6 +86,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import styles from "../styles/Testimonial.module.css";
 import Img1 from "../assets/person1.jpg";
 import Img2 from "../assets/person2.jpg";
+import Img3 from "../assets/person3.jpg";
 
 const Testimonial = () => {
   const [currentReview, setCurrentReview] = useState(0);
@@ -105,6 +106,13 @@ const Testimonial = () => {
         "I never thought cracking IELTS would be this easy! The cheat sheet and AI tools made my preparation so efficient. Thank you, Prepeve!",
       review_stars: 4,
       person_name: "Ravi Sharma, First Attempt Success",
+    },
+    {
+      image: Img3,
+      review:
+        "I had been struggling with IELTS prep for months. This webinar gave me a simple, clear path, and I passed with flying colors!",
+      review_stars: 4,
+      person_name: "Gurpreet Kaur, IELTS Achiever",
     },
   ];
 
