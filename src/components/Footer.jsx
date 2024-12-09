@@ -73,11 +73,11 @@ let Footer = () => {
                 <img src={instagram} />
               </div>
             </a>
-            {/* <a href="#">
+            <a href="https://www.linkedin.com/company/prepeve-classes">
               <div className={styles.socialIcon}>
                 <img src={linkedin} />
               </div>
-            </a> */}
+            </a>
           </div>
         </div>
       </div>
