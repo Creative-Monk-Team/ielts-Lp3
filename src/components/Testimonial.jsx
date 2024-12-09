@@ -112,7 +112,7 @@ const Testimonial = () => {
     setIsFading(true);
     setTimeout(() => {
       setCurrentReview((prev) => (prev + 1) % reviewData.length);
-      setIsFading(false );
+      setIsFading(false);
     }, 300);
   };
 
@@ -127,12 +127,12 @@ const Testimonial = () => {
   };
 
   return (
-    <div className={styles.testimonialsSection} id='testimonials'>
+    <div className={styles.testimonialsSection} id="testimonials">
       <div className={styles.testimonialsContentSection}>
-        <h2 className={styles.testHeading}>Testimonials</h2>
+        <h2 className={styles.testHeading}>What Our Students Are Saying</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Exercitationem ut magnam reprehenderit velit illo commodi!
+          Discover what our satisfied clients have said and read our testimonials
+          for real experiences.
         </p>
 
         <div className={styles.clientReviewsOverflowSection}>

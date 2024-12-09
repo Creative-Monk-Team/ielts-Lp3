@@ -54,7 +54,7 @@ const Features = () => {
               <div></div>
               <h5>Elevate Your Learning</h5>
             </div>
-            <h1>Key Features & Benefits of Joining This Webinar</h1>
+            <h1>Key Features & Benefits</h1>
             <p className={styles.FeaturesContentPara}>
               Join our exclusive IELTS webinar to gain expert insights, proven
               strategies, and practical tips for all test sections. Boost your
@@ -65,19 +65,30 @@ const Features = () => {
               <div>
                 <button className={styles.checkmarkButton}>✓</button>
               </div>{" "}
-              <p><b>Crack IELTS for Just ₹99:</b> Yes, you read that right! Our 2-day webinar is designed to give you everything you need to succeed, all for just ₹99. No hidden costs, no upsells.</p>
+              <p>
+                <b>Master IELTS with Expert-Led Guidance:</b> Our 2-day webinar
+                is designed by experts to help you understand the exam format,
+                tricks to ace each section, and how to maximize your score.
+              </p>
             </div>
             <div className={styles.FeaturesListParent}>
               <div>
                 <button className={styles.checkmarkButton}>✓</button>
               </div>{" "}
-              <p><b>Comprehensive Guidance: </b> 	Get access to expert strategies and tips from the best IELTS instructors to help you clear the exam in your first attempt.</p>
+              <p>
+                <b>Lifetime Access: </b> Enjoy lifetime access to webinar
+                materials and future updates. Our support doesn’t end after the
+                webinar.
+              </p>
             </div>
             <div className={styles.FeaturesListParent}>
               <div>
                 <button className={styles.checkmarkButton}>✓</button>
               </div>{" "}
-              <p><b>Lifetime Access and Support:</b> You get continuous access to the materials and our expert community, ensuring you are supported until you achieve your IELTS success!</p>
+              <p>
+                <b>IELTS Cheat Sheet:</b> A step-by-step plan to crack the exam
+                in just one month!
+              </p>
             </div>
             <span className={styles.encquireNowButton}>
               <Button text={"Learn More"} />

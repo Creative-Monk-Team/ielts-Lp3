@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useContext } from "react";
-import { ToastContainer, toast, Bounce } from 'react-toastify';
-import { AuthContext } from '../context/AuthContextProvider';
+import { ToastContainer, toast, Bounce } from "react-toastify";
+import { AuthContext } from "../context/AuthContextProvider";
 import banner from "../assets/banner2.jpg";
 import banner3 from "../assets/banner5.jpg";
 import banner5 from "../assets/banner6.jpg";
@@ -11,7 +11,7 @@ import Button from "./Button";
 import CountdownTimer from "../components/CountdownTimer";
 
 let Banner = () => {
-  let images = [BannerRecentImg ];
+  let images = [BannerRecentImg];
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -21,21 +21,21 @@ let Banner = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-    let [showForm, setShowForm, showWaitingLoading, setShowWaitingLoading] =
-      useContext(AuthContext);
-    const notifySuccess = () => {
-      toast.success('Form Submitted Successfully', {
-        position: 'top-center',
-        autoClose: 3000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: 'colored',
-        transition: Bounce,
-      });
-    };
+  let [showForm, setShowForm, showWaitingLoading, setShowWaitingLoading] =
+    useContext(AuthContext);
+  const notifySuccess = () => {
+    toast.success("Form Submitted Successfully", {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      transition: Bounce,
+    });
+  };
 
   const notifyError = () => {
     toast.error("Please try again later.", {
@@ -79,7 +79,7 @@ let Banner = () => {
         notifySuccess();
         setShowWaitingLoading(false);
         setTimeout(() => {
-          window.location.href="/thankyou"
+          window.location.href = "/thankyou";
         }, 5000);
       } else {
         setShowWaitingLoading(false);
@@ -141,20 +141,17 @@ let Banner = () => {
             className={`${styles.bannerContentSection} ${
               styles.animationSection
             } ${isFirstView ? styles.showAnimationSection : ""}`}
-           >
-            <h1>
-            Crack IELTS in Just ₹99 – Guaranteed Success with Bonuses Worth ₹5,000!
-            </h1>
-            {/* <div className={styles.outlinedText}>BOOST</div> */}
+          >
+            <h1>Want to Crack IELTS in 30 Days? Join Our ₹99 Webinar!</h1>
 
             <p>
-            Unlock your IELTS success with our exclusive 2-day webinar. Limited seats available!
+              Get access to expert IELTS preparation for just ₹99, plus bonuses
+              worth ₹5,000! Secure your seat today!
             </p>
             <span className={styles.encquireNowButton}>
-            <Button text={'Enquire Now'}/>
+              <Button text={"Enquire Now"} />
             </span>
-            <CountdownTimer/>
-           
+            <CountdownTimer />
           </div>
           {/* <div
             className={`${styles.bannerFormSection} ${

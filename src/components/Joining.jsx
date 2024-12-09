@@ -39,32 +39,27 @@ let Joining = () => {
 
   let data = [
     {
-      question:
-        "1. What is the webinar about?",
+      question: "1. What is the webinar about?",
       answer:
         "This 2-day webinar will provide you with the tools, strategies, and resources to crack IELTS in one go. You'll learn about key exam strategies, mistakes to avoid, and have access to exclusive resources like cheat sheets and mock tests.",
     },
     {
-      question:
-        "2. Will I get lifetime access to the content?",
+      question: "2. Will I get lifetime access to the content?",
       answer:
         " Yes! Once you register, you will have lifetime access to all the materials, including the webinar recording, cheat sheets, e-books, and the Facebook support group.",
     },
     {
-      question:
-        "3. What if I’m a beginner? Is this webinar for me?",
+      question: "3. What if I’m a beginner? Is this webinar for me?",
       answer:
         " Absolutely! Whether you're just starting or looking for last-minute tips, this webinar is designed for all levels of IELTS students. We cover everything from the basics to expert strategies.",
     },
     {
-      question:
-        "4. Is there any guarantee that I’ll clear the exam?",
+      question: "4. Is there any guarantee that I’ll clear the exam?",
       answer:
         " We can’t guarantee the results, but with our proven methods, dedicated support, and continuous practice, we give you the best possible chance of success. Many students have successfully cleared IELTS on their first attempt after attending our webinar.",
     },
     {
-      question:
-        "5. How do I book my spot?",
+      question: "5. How do I book my spot?",
       answer:
         " Simply click on the “Book Now” button below to reserve your spot. Hurry, as seats are limited!",
     },
@@ -83,12 +78,10 @@ let Joining = () => {
           isFirstView ? styles.showAnimationSection : ""
         }`}
       >
-        <h1 ref={aboutRef}>FAQ's Heading here</h1>
+        <h1 ref={aboutRef}>FAQ's</h1>
         <p className={styles.faqDesc}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, facilis
-          eveniet? Laudantium nemo omnis ullam necessitatibus quod. Commodi
-          architecto iusto laborum, nisi assumenda nostrum ea enim. Aliquid,
-          eligendi? Quisquam, facilis.
+          Have questions? Our FAQs section provides detailed answers to common
+          inquiries, offering helpful information and support to guide you.
         </p>
       </div>
 

@@ -46,7 +46,7 @@ let FeatureProperty = () => {
             <h5>Event's Keynote Speaker </h5>
             <div></div>
           </div>
-          <h1>Meet the Webinar Leader</h1>
+          <h1>Instructor Credentials</h1>
           <h4>
             Our webinar is led by [Instructor’s Name], a seasoned IELTS trainer
             with over [X] years of experience.
