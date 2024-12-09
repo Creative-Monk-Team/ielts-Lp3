@@ -1,0 +1,268 @@
+/* .navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+}
+
+.innerNavbar {
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.233);
+}
+
+.logo {
+  width: 300px;
+  height: auto;
+}
+
+.optionsDiv {
+  width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: -10px;
+}
+
+.optionsDiv a {
+  color: var(--primary-color-white);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  font-size: 17px;
+} */
+/* Base Navbar Styles */
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+  /* background-color: #f17f56; */
+  background-color: white;
+}
+
+.innerNavbar {
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0px;
+  /* padding-bottom: 10px; */
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.233); */
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.optionsDiv {
+  width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: -10px;
+}
+
+.optionsDiv a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  font-size: 18px;
+}
+
+/* Mobile Navbar Styles (Hamburger) */
+.smallNavbar {
+  display: none;
+}
+
+.hamburger {
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburgerParent {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.showHamburger {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hamburgerOverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.445);
+}
+
+.hamburgerContent {
+  width: 300px;
+  flex-shrink: 0;
+  background-color: white;
+  height: 100%;
+  padding: 20px;
+  margin-right: -300px;
+}
+
+.showMenuContent {
+  margin-right: 0px;
+}
+
+.quickAccess {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #000;
+  margin-top: 15px; 
+  margin-bottom: 25px; 
+} 
+
+.quickAccess img{
+  margin-top: 4px;
+}
+
+.quickAccess p {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.smallOptionsDiv a {
+  display: block;
+  /* color: #f17f56; */ 
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 15px 0;
+  text-decoration: none;
+}
+
+.closeIcon {
+  width: 20px;
+  cursor: pointer;
+} 
+
+@media all and (max-width: 1500px) {
+  .innerNavbar {
+    width: 1400px;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  .innerNavbar {
+    width: 1240px;
+  }
+}
+
+@media all and (max-width: 1300px) {
+  .innerNavbar {
+    width: 1190px;
+  }
+}
+
+@media all and (max-width: 1240px) {
+  .innerNavbar {
+    width: 1000px;
+  }
+
+  .optionsDiv {
+    width: 800px;
+  }
+
+  .optionsDiv a {
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 1050px) {
+  .innerNavbar {
+    width: 900px;
+  }
+
+  .optionsDiv {
+    width: 700px;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .innerNavbar {
+    width: 95%;
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 900px) {
+  .navbar {
+    display: none;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .smallNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: #f17f56; */
+    background-color: white; 
+    padding: 10px 2.5%;
+  } 
+
+  .hamburger {
+    width: 25px;
+    filter: invert();
+  }
+
+  .hamburgerParent {
+    display: flex;
+  }
+
+  .smallNavbar {
+    position: relative;
+    z-index: 3;
+    /* padding: 15px 5%; */
+  }
+
+  .hamburgerContent {
+    width: 350px;
+    flex-shrink: 0;
+  }
+
+  .smallOptionsDiv a {
+    font-size: 16px;
+  }
+}
+
+/* @media (max-width: 700px) {
+  .smallNavbar {
+    padding: 18px 5%;
+  }
+
+  .hamburgerContent {
+    width: 250px;
+  }
+
+  .smallOptionsDiv a {
+    font-size: 16px;
+  }
+} */

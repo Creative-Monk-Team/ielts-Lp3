@@ -1,0 +1,241 @@
+/* Testimonials.module.css
+.testimonialsSection {
+  padding: 80px 0px;
+  background-color: #ffffff;
+}
+
+.testimonialsContentSection {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.clientReviewsOverflowSection {
+  margin-top: 20px;
+}
+
+.clientTestimonialsSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: opacity 1s ease-in-out;
+}
+
+.clientImageSection img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviewDetails {
+  margin-top: 20px;
+}
+
+.reviewsStarsSection {
+  margin-top: 10px;
+}
+
+.reviewsPaginationSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.testHeading{
+  margin-bottom: 20px;
+}
+
+.reviewsPaginationSection button {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  font-size: 30px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.reviewsPaginationSection button:hover {
+  color: #007bff;
+}
+
+.reviewsPaginationSection p {
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.prevButton {
+  margin-right: 10px;
+}
+
+.nextButton {
+  margin-left: 10px;
+}
+
+.clientTestimonialsSection {
+  opacity: 1; 
+}
+
+.clientTestimonialsSection.fadeIn {
+  opacity: 1;  
+} */
+.testimonialsSection {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.testimonialsContentSection {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.clientReviewsOverflowSection {
+  margin-top: 100px;
+}
+
+.clientTestimonialsSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 1;  /* Start with the opacity set to 1 */
+  transition: opacity 0.3s ease-in-out;  /* This applies to both fadeIn and fadeOut */
+}
+
+.clientImageSection img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px; /* Spacing between the image and the review text */
+}
+
+.reviewDetails {
+  margin-top: 20px;
+}
+
+.reviewsStarsSection {
+  margin-top: 10px;
+}
+
+.reviewsPaginationSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.testHeading {
+  margin-bottom: 20px;
+}
+
+.reviewsPaginationSection button {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  font-size: 30px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.reviewsPaginationSection button:hover {
+  color: #007bff;
+}
+
+.reviewsPaginationSection p {
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.prevButton {
+  margin-right: 10px;
+}
+
+.nextButton {
+  margin-left: 10px;
+}
+
+/* No need for a separate transition on fadeIn class */
+.clientTestimonialsSection.fadeOut {
+  opacity: 0; /* Fade out effect */
+}
+
+.clientTestimonialsSection.fadeIn {
+  opacity: 1; /* Fade in effect */
+}
+
+.reviewPersonName {
+  margin-top: 20px;
+}
+
+
+/* Responsive styles */
+
+/* For small screens (mobile devices) */
+@media (max-width: 768px) {
+  .testimonialsContentSection {
+    padding: 0 15px;
+  }
+
+  .clientTestimonialsSection {
+    /* flex-direction: column; */
+    text-align: center;
+  }
+
+  .clientImageSection img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+  }
+
+  .reviewDetails h4 {
+    font-size: 16px;
+  }
+
+  .reviewsPaginationSection {
+    /* flex-direction: column; */
+    align-items: center;
+  }
+
+  .reviewsPaginationSection p {
+    margin: 10px 0;
+  }
+
+  .reviewsPaginationSection button {
+    font-size: 25px;
+  }
+}
+
+/* For very small screens (portrait mobile) */
+@media (max-width: 480px) {
+  .testimonialsSection {
+    padding: 60px 0;
+  }
+
+  .clientImageSection img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  .reviewDetails h4 {
+    font-size: 14px;
+  }
+
+  .reviewsPaginationSection button {
+    font-size: 20px;
+  }
+
+  .reviewsPaginationSection p {
+    font-size: 16px;
+  }
+  .reviewPersonName{
+    margin-top: 20px;
+    font-size: 14px;
+  }
+}

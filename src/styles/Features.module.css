@@ -1,0 +1,221 @@
+.FeaturesParent {
+  /* width: 100%; */
+  padding: 80px 0px;
+}
+
+.FeaturesContent {
+  width: 48%;
+  margin: auto; 
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.FeaturesContent.showAnimationSection {
+  transition-delay: 0.4s;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.FeaturesContent h1 {
+  margin: 20px 0px;
+}
+
+.FeaturesImage {
+  width: 48%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 10px;
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.FeaturesImage.showAnimationSection {
+  transition-delay: 0.2s;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.FeaturesChild {
+  width: 1440px;
+  margin: auto;
+  display: flex;
+  align-items: stretch;
+}
+.FeaturesListParent {
+  display: flex;
+  margin-top: 25px;
+  align-items: flex-start;
+}
+
+.FeaturesListParent p {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.learnMore {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  background-color: transparent;
+  border: 2px solid #d3d3d3;
+  border-radius: 15px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  margin-top: 30px;
+}
+
+.arrow {
+  font-size: 16px;
+  margin-left: 5px;
+  transition: transform 0.4s ease;
+  rotate: -45deg;
+}
+
+/* Hover effect */
+.learnMore:hover {
+  border-color: rgba(0, 0, 0, 0.507);
+  background-color: #f2f2f2;
+}
+
+.learnMore:hover .arrow {
+  transform: translateX(5px);
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.learnMore {
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.checkmarkButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.checkmarkButton:hover {
+  background-color: #333;
+  transform: scale(1.1);
+}
+
+.FeaturesContentPara {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.img1 {
+  border-radius: 20px;
+  width: 95%;
+}
+.img2 {
+  border-radius: 20px;
+  width: 400px;
+}
+.encquireNowButton button {
+  margin-top: 30px;
+}
+
+.yellowLineFlex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.yellowLineFlex div {
+  width: 50px;
+  height: 2px;
+  background-color:#f17f56;
+}
+
+.yellowLineFlex h5 {
+  color:#f17f56;
+}
+
+@media all and (max-width: 1400px) {
+  .FeaturesChild {
+    width: 1240px;
+  }
+}
+
+@media all and (max-width: 1300px) {
+  .FeaturesChild {
+    width: 1190px;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+  .FeaturesImage {
+    width: 90%;
+    position: relative;
+    justify-content: center;
+  }
+
+  .FeaturesContent {
+    width: 90%;
+    text-align: center;
+  }
+  .yellowLineFlex {
+    justify-content: center;
+  }
+  .yellowLineFlex div {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1240px) {
+  .FeaturesChild {
+    width: 1000px;
+  }
+}
+
+@media all and (max-width: 1050px) {
+  .FeaturesChild {
+    width: 900px;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .FeaturesContent {
+    width: 100%;
+  }
+
+  .FeaturesImage {
+    width: 100%;
+  }
+
+  .img1 {
+    width: 95%;
+  }
+  .img2 {
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .FeaturesChild {
+    width: 95vw;
+  }
+}

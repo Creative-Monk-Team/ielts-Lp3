@@ -1,0 +1,84 @@
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  transition: 0.3s all ease-in-out;
+}
+
+#prepeve img {
+  background-size: cover;
+  object-fit: cover;
+}
+
+:root {
+  --primary-color-black: #24262d;
+  --primary-color-golden: #de9e53;
+  --primary-color-white: #ffffff;
+  --secondary-color-beige: #f3f3f3;
+  --primary-color-blue:#02359e;
+   --primary-color-coral:#ff615d;
+}
+
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 25px;
+}
+p {
+  font-size: 15px;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("./assets/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GtSectra";
+  src: url("./assets/fonts/AloeveraDisplay-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "montserrat", sans-serif;
+}
+
+p,
+a,
+button,
+textarea,
+input,
+span,
+select,
+option {
+  font-family: "GtSectra", sans-serif;
+}
+
+@media all and (max-width: 767px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 13px;
+  }
+}

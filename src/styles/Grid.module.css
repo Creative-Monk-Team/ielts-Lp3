@@ -1,0 +1,39 @@
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+  margin: auto;
+  margin-top: 200px;
+  gap: 10px;
+  border: 1px solid black;
+}
+
+.child {
+  flex: 1 1 calc(33.33% - 10px);
+  height: 100px;
+  background-color: #3498db;
+}
+
+.child1 {
+  flex: 1 1 calc(33.33% - 10px);
+  height: 100px;
+  background-color: #e74c3c;
+}
+
+.child2 {
+  flex: 1 1 calc(66.66% - 10px);
+  height: 100px;
+  background-color: #f39c12;
+}
+
+.child3 {
+  flex: 1 1 calc(50% - 10px);
+  height: 100px;
+  background-color: #e74c3c;
+}
+
+.child4 {
+  flex: 1 1 calc(50% - 10px);
+  height: 100px;
+  background-color: #e74c3c;
+}

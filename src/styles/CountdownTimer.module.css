@@ -1,0 +1,76 @@
+ 
+  
+  .countdownTimer_container {
+    color: #333;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .countdownTimer_headline {
+    font-weight: normal;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  .countdownTimer_li {
+    display: inline-block;
+    font-size: 1.4em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+    width: 150px;
+  }
+  
+  .countdownTimer_li span {
+    display: block;
+    font-size: 3.5rem;
+  }
+  
+ 
+  .countdownTimer_countdown {
+    margin-top: 20px;
+  }
+
+  .countdownTimer_li span{
+    font-weight: 800 !important;
+  }
+  
+  .countdownTimer_days, 
+  .countdownTimer_hours, 
+  .countdownTimer_minutes, 
+  .countdownTimer_seconds {
+    display: inline-block;
+  }
+  
+  @media all and (max-width: 768px) {
+    .countdownTimer_headline {
+      font-size: calc(1.5rem * var(--smaller));
+    }
+  
+    .countdownTimer_li {
+      font-size: 13px;
+    }
+  
+    .countdownTimer_li span {
+      font-size: 50px;
+    }
+  }
+
+  @media all and (max-width: 410px){
+    .countdownTimer_countdown ul{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .countdownTimer_li {
+      padding: 0.5em;
+      width: 70px;
+    }
+  }
+  

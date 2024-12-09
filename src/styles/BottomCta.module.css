@@ -1,0 +1,22 @@
+.bottomCta {
+  position: fixed;
+  bottom: -200px;
+  opacity: 0;
+  visibility: hidden;
+  left: 0px;
+  width: 100vw;
+  background-color: white;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: 0.3s all ease-in-out;
+}
+
+.bottomCta.showCta {
+  bottom: 0px;
+  opacity: 1;
+  visibility: visible;
+}

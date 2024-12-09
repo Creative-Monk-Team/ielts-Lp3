@@ -1,0 +1,170 @@
+.joiningParent {
+  text-align: center;
+  /* padding: 2rem; */
+  padding: 100px 0px;
+  /* background-color: #f9f9f9; */
+  background-image: linear-gradient(
+    to right,
+    rgb(252, 252, 252),
+    var(--secondary-color-beige)
+  );
+  position: relative;
+}
+
+.p3 {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  width: 250px;
+  height: auto;
+  opacity: 0.03;
+}
+
+.faqDesc {
+  width: 80%;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.p4 {
+  position: absolute;
+  bottom: 50px;
+  right: 100px;
+  width: 250px;
+  height: auto;
+  opacity: 0.02;
+}
+
+.joiningParent button {
+  margin-top: 50px;
+}
+
+.innerJoining {
+  margin-bottom: 2rem;
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.innerJoining.showAnimationSection {
+  transition-delay: 0.2s;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.innerJoining h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.innerJoining h3 {
+  font-size: 1rem;
+  color: #666;
+}
+
+.features {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 30px;
+}
+
+.features.showAnimationSection {
+  transition-delay: 0.4s;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.accordionHeader {
+  background-color: white;
+  width: 1440px;
+  margin: auto;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.accordionHeader h4 {
+  line-height: 1.5;
+}
+
+.accordionContent {
+  background-color: white;
+  width: 1440px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  border: none;
+  max-height: 0px;
+  overflow: hidden;
+  margin-bottom: 0px;
+  padding: 0px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.showContent {
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  max-height: 600px;
+}
+
+.accordionContent p {
+  line-height: 1.7;
+  text-align: left;
+}
+
+.accordionHeader h4 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.plusIcon {
+  width: 20px;
+  height: 20px;
+  transform: rotate(0deg);
+}
+
+.activePlusIcon {
+  transform: rotate(180deg);
+  transition: 0.3s all ease-in-out;
+}
+
+@media all and (max-width: 1500px) {
+  .accordionContent {
+    width: 1360px;
+  }
+
+  .accordionHeader {
+    width: 1360px;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  .accordionContent {
+    width: 95vw;
+  }
+
+  .accordionHeader {
+    width: 95vw;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .faqDesc {
+    width: 95%;
+  }
+}

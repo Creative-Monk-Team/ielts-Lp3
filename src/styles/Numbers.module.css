@@ -1,0 +1,111 @@
+/* Parent Container */
+.numbersContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 1440px; */
+    margin: 0 auto;
+    padding: 4rem 4rem;
+    background: linear-gradient(to right, #f9f9f9, #f17f56);
+    gap: 1rem;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  }
+
+  .innerNumbersContainer{
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Each Statistic Box */
+  .statItem {
+    text-align: center;
+    flex: 1;
+    padding: 1rem;
+    /* min-width: 200px; */
+    border-left: 1px solid #ffffff;
+  }
+  
+  .statItem:first-child {
+    border-left: none; /* Remove left border from the first item */
+  }
+  
+  /* Typography Styles */
+  .value {
+    font-size: 2rem; /* Large font for default (1440px) */
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .label {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #555;
+  }
+  
+  .description {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  
+  /* For smaller devices, e.g., tablets */
+  @media (max-width: 1024px) {
+    .innerNumbersContainer {
+      padding: 2rem 2rem; /* Reduce padding */
+      flex-wrap: wrap; /* Enable wrapping */
+    }
+  
+    .statItem {
+      flex: 1 1 45%; /* Each item takes up 45% of width */
+      margin-bottom: 1rem; /* Add spacing between rows */
+    }
+  
+    .value {
+      font-size: 1.8rem;
+    }
+  
+    .label {
+      font-size: 1rem;
+    }
+  
+    .description {
+      font-size: 0.85rem;
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 768px) {
+    .numbersContainer{
+        padding: 4rem 2rem;
+    }
+
+    .innerNumbersContainer {
+      /* flex-direction: column; */
+      align-items: flex-start;
+      padding: 1rem;
+    }
+  
+    .statItem {
+        width: 150px;
+      border-left: none; /* Remove borders for simplicity */
+      margin-bottom: 1rem;
+    }
+  
+    .value {
+      font-size: 1.6rem;
+    }
+  
+    .label {
+      font-size: 0.9rem;
+    }
+  
+    .description {
+      font-size: 0.8rem;
+    }
+  }
+  

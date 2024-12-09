@@ -1,0 +1,220 @@
+.FeatureProperty {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  padding: 80px 0px;
+  background-image: linear-gradient(to right, rgb(252, 252, 252), var(--secondary-color-beige));
+  /* background-color: var(--secondary-color-beige); */
+  position: relative;
+}
+
+.p2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  opacity: 0.025;
+}
+
+.innerFeatureProperty {
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.imageSection {
+  width: 48%;
+  position: relative;
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.imageSection.showAnimationSection {
+  transition-delay: 0.4s;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.FeaturePropertyContent {
+  width: 48%;
+  text-align: left;
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.FeaturePropertyContent * {
+  position: relative;
+  z-index: 2;
+}
+
+.FeaturePropertyContent.showAnimationSection {
+  transition-delay: 0.2s;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.bigImage {
+  width: 100%;
+  border-radius: 10px;
+  height: 600px;
+  position: relative;
+  z-index: 2;
+}
+
+.smallImage {
+  position: absolute;
+  bottom: -50px;
+  right: 50px;
+  width: 50%;
+  height: 450px;
+  border: 10px solid var(--secondary-color-beige);
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.bgImage {
+  position: absolute;
+  bottom: -50px;
+  left: 150px;
+  z-index: 1;
+  width: 200px;
+  height: 200px;
+  opacity: 0.3;
+}
+
+.imageDetailsSection {
+  position: absolute;
+  z-index: 4;
+  bottom: -20px;
+  left: 200px;
+  width: 250px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--secondary-color-beige);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: left;
+  padding: 25px 15px 20px;
+}
+
+.imageDetailsSection p {
+  color: gray;
+  margin: 8px 0px;
+  font-size: 12px;
+}
+
+.yellowLineFlex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.yellowLineFlex div {
+  width: 50px;
+  height: 2px;
+  background-color: #f17f56;
+}
+
+.yellowLineFlex h5 {
+  color: #f17f56;
+}
+
+.FeaturePropertyContent h1 {
+  margin: 25px 0px;
+}
+
+.FeaturePropertyContent p {
+  margin: 25px 0px;
+}
+
+@media all and (max-width: 1400px) {
+  .innerFeatureProperty {
+    width: 1240px;
+  }
+}
+
+@media all and (max-width: 1300px) {
+  .innerFeatureProperty {
+    width: 1190px;
+  }
+}
+
+@media all and (max-width: 1240px) {
+  .innerFeatureProperty {
+    width: 1000px;
+  }
+}
+
+@media all and (max-width: 1050px) {
+  .innerFeatureProperty {
+    width: 900px;
+    flex-direction: column-reverse;
+    row-gap: 100px;
+  }
+  .imageSection {
+    width: 100%;
+    position: relative;
+  }
+
+  .FeaturePropertyContent {
+    width: 100%;
+    text-align: center;
+  }
+  .yellowLineFlex {
+    justify-content: center;
+  }
+  .yellowLineFlex div {
+    display: none;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .innerFeatureProperty {
+    width: 95%;
+  }
+
+  .smallImage {
+    right: -10px;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .bigImage {
+    height: 400px;
+  }
+
+  .smallImage {
+    height: 300px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .bigImage {
+    height: 300px;
+  }
+
+  .smallImage {
+    height: 200px;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .bigImage {
+    height: 270px;
+  }
+
+  .smallImage {
+    height: 170px;
+  }
+}
