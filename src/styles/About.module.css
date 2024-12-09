@@ -7,6 +7,12 @@
   position: relative;
 }
 
+@media all and (max-width: 767px){
+  .imageDetailsSection{
+    display: none !important;
+  }
+}
+
 .p1{
   position: absolute;
   bottom: 0;
@@ -160,7 +166,7 @@
   .innerAbout {
     width: 900px;
     flex-direction: column;
-    row-gap: 100px;
+    row-gap: 50px;
   }
   .imageSection {
     width: 100%;

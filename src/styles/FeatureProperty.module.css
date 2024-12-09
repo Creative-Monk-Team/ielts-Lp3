@@ -160,7 +160,7 @@
   .innerFeatureProperty {
     width: 900px;
     flex-direction: column-reverse;
-    row-gap: 100px;
+    row-gap: 50px;
   }
   .imageSection {
     width: 100%;
