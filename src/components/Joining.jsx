@@ -39,27 +39,27 @@ let Joining = () => {
 
   let data = [
     {
-      question: "1. What is the webinar about?",
+      question: "What is the webinar about?",
       answer:
         "This 2-day webinar will provide you with the tools, strategies, and resources to crack IELTS in one go. You'll learn about key exam strategies, mistakes to avoid, and have access to exclusive resources like cheat sheets and mock tests.",
     },
     {
-      question: "2. Will I get lifetime access to the content?",
+      question: "Will I get lifetime access to the content?",
       answer:
         " Yes! Once you register, you will have lifetime access to all the materials, including the webinar recording, cheat sheets, e-books, and the Facebook support group.",
     },
     {
-      question: "3. What if I’m a beginner? Is this webinar for me?",
+      question: "What if I’m a beginner? Is this webinar for me?",
       answer:
         " Absolutely! Whether you're just starting or looking for last-minute tips, this webinar is designed for all levels of IELTS students. We cover everything from the basics to expert strategies.",
     },
     {
-      question: "4. Is there any guarantee that I’ll clear the exam?",
+      question: "Is there any guarantee that I’ll clear the exam?",
       answer:
         " We can’t guarantee the results, but with our proven methods, dedicated support, and continuous practice, we give you the best possible chance of success. Many students have successfully cleared IELTS on their first attempt after attending our webinar.",
     },
     {
-      question: "5. How do I book my spot?",
+      question: "How do I book my spot?",
       answer:
         " Simply click on the “Book Now” button below to reserve your spot. Hurry, as seats are limited!",
     },
